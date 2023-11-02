@@ -9,7 +9,7 @@ function App() {
   const data = useSelector((state) => state.fetchData.data);
   console.log(data);
 
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   // const handleChange = (e) => {
   //   e.preventDefault();
   //   console.log("clicked");
