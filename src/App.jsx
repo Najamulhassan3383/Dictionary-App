@@ -5,9 +5,9 @@ import { fetchData } from "./components/DataFetching/FetchSlice";
 import MainContainer from "./components/MainContainer";
 
 function App() {
-  const theme = useSelector((state) => state.theme.value);
-  const data = useSelector((state) => state.fetchData.data);
-  console.log(data);
+  // const theme = useSelector((state) => state.theme.value);
+  // const data = useSelector((state) => state.fetchData.data);
+  // console.log(data);
 
   // const dispatch = useDispatch();
   // const handleChange = (e) => {
@@ -24,7 +24,7 @@ function App() {
   // }, [theme]);
 
   return (
-    <div >
+    <div>
       <MainContainer />
     </div>
   );

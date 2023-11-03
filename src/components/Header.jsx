@@ -9,8 +9,8 @@ function Header() {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
-    console.log(theme);
-    console.log("theme changed");
+    // console.log(theme);
+    // console.log("theme changed");
   }, [theme]);
 
   const handlechange = () => {
@@ -23,7 +23,7 @@ function Header() {
       dispatch(changeTheme("dark"));
     }
 
-    console.log(`Selected Theme: ${theme}`);
+    // console.log(`Selected Theme: ${theme}`);
   };
 
   return (

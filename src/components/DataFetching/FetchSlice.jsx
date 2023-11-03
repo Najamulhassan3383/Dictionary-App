@@ -1,8 +1,8 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-export const fetchData = createAsyncThunk("fetchData", async () => {
+export const fetchData = createAsyncThunk("fetchData", async (word) => {
   const response = await fetch(
-    "https://api.dictionaryapi.dev/api/v2/entries/en/hello"
+    `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
   );
   const data = await response.json();
   return data;

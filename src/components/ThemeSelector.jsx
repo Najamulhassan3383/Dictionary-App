@@ -23,15 +23,15 @@ const ThemeSelector = () => {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
-    console.log(theme);
-    console.log("theme changed");
+    // console.log(theme);
+    // console.log("theme changed");
   }, [theme]);
 
   const handleThemeChange = (theme) => {
     dispatch(changeTheme(theme));
     setIsDropdownOpen(false);
 
-    console.log(`Selected Theme: ${theme}`);
+    // console.log(`Selected Theme: ${theme}`);
   };
   const handleDropDown = () => {
     setIsDropdownOpen(!isDropdownOpen);
