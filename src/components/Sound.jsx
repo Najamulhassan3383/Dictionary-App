@@ -9,10 +9,14 @@ function Sound() {
   };
 
   if (data) {
+    let newurl = data[0].phonetics.filter((item) => {
+      return item.audio !== "";
+    });
     state = {
-      word: data.word,
-      url: data[0].phonetics[0].audio,
+      word: data[0].word,
+      url: newurl[0].audio,
     };
+    console.log(newurl[0].audio);
   }
 
   const audio = new Audio(state.url);
@@ -41,7 +45,7 @@ function Sound() {
             audio.play();
           }}
         >
-          {playing ? "Pause" : "Play"}
+          <img src="../../public/assets/icon-play.svg" alt="play" />
         </button>
       </div>
     </div>
