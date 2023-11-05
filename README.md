@@ -77,4 +77,4 @@ An accessible busy spinner and live region is used in this implementation. Durin
 
 ## Author
 
-- Website - [Jeff Cooper](https://najamulhassan.me/)
+- Website - [Najam ul Hassan](https://najamulhassan.me/)
