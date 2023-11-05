@@ -20,8 +20,21 @@ function Input() {
     // console.log("clicked");
     // dispatch(fetchData());
   };
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      let value = inputRef.current.value.trim();
+      // console.log(value);
+      if (value) {
+        dispatch(fetchData(value));
+        inputRef.current.value = "";
+      }
+    }
+  };
   return (
-    <div className="w-full h-16  rounded-xl flex flex-row focus-within:border-4 transition-all ">
+    <div
+      className="w-full h-16  rounded-xl flex flex-row focus-within:border-4 transition-all "
+      onKeyDown={handleKeyDown}
+    >
       <input
         ref={inputRef}
         type="text"
