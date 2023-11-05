@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchData } from "./DataFetching/FetchSlice";
+import { fetchData } from "./Store/DataFetching/FetchSlice";
 
 function Input() {
   const data = useSelector((state) => state.fetchData.data);
@@ -32,20 +32,20 @@ function Input() {
   };
   return (
     <div
-      className="w-full h-16  rounded-xl flex flex-row focus-within:border-4 transition-all "
+      className="w-full h-16  rounded-xl flex flex-row focus-within:border-4 focus-within:border-primary transition-all "
       onKeyDown={handleKeyDown}
     >
       <input
         ref={inputRef}
         type="text"
-        className="w-full  flex justify-center align-center bg-transparent pl-2 text-[#cccccc] outline-0  w-full h-full rounded-xl"
+        className="w-full  flex justify-center align-center bg-transparent pl-2 text-primary-content outline-0  w-full h-full rounded-xl"
         placeholder="Search a word"
       />
       <button className="w-12 h-full  rounded-xl " onClick={handleClick}>
         <img
           src="assets/icon-search.svg"
           alt="search"
-          className="h-3/5 w-full"
+          className="h-2/5 w-full"
         />
       </button>
     </div>

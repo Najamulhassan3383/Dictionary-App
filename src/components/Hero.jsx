@@ -27,7 +27,7 @@ function Hero() {
         </div>
       ) : (
         <img
-          src="../../public/assets/Loading.svg"
+          src="/assets/Loading.svg"
           alt="loading"
           className="w-24 h-24 my-8 mx-auto"
         />

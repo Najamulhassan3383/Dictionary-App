@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ThemeSelector from "./ThemeSelector";
 import { useDispatch, useSelector } from "react-redux";
-import { changeTheme } from "./ThemeSlice";
+import { changeTheme } from "./Store/ThemeSlice";
 
 function Header() {
   const theme = useSelector((state) => state.theme.value);
@@ -34,7 +34,7 @@ function Header() {
             className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
             href="#"
           >
-            <img src="../../public/assets/logo.svg" alt="logo" />
+            <img src="assets/logo.svg" alt="logo" />
           </a>
         </div>
         <div className="flex flex-row items-center">
@@ -58,7 +58,7 @@ function Header() {
           </ul>
           <div className=" mx-2 bg-red-900">
             <img
-              src="../../public/assets/icon-moon.svg"
+              src="/assets/icon-moon.svg"
               alt="moon"
               className="w-full h-full"
             />
@@ -66,7 +66,7 @@ function Header() {
         </div>
         <div className="w-8 h-8 " onClick={() => handlechange()}>
           <img
-            src="../../public/assets/icon-moon.svg"
+            src="/assets/icon-moon.svg"
             alt="najam"
             className="w-full h-full "
           />

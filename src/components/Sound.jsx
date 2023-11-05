@@ -45,7 +45,7 @@ function Sound() {
           }}
         >
           <img
-            src="../../public/assets/icon-play.svg"
+            src="/assets/icon-play.svg"
             alt="play"
             className="my-2"
           />

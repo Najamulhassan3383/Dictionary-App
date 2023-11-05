@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { changeTheme } from "./ThemeSlice";
+import { changeTheme } from "./Store/ThemeSlice";
 
 const themes = [
   "light",
@@ -51,10 +51,7 @@ const ThemeSelector = () => {
           <div className="mr-2 flex">
             {" "}
             {theme}
-            <img
-              src="../../public/assets/icon-arrow-down.svg"
-              className="ml-2"
-            />
+            <img src="/assets/icon-arrow-down.svg" className="ml-2" />
           </div>
         </button>
       </div>
