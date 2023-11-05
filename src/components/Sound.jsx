@@ -12,11 +12,18 @@ function Sound() {
     let newurl = data[0].phonetics.filter((item) => {
       return item.audio !== "";
     });
+    let text = data[0].phonetics.filter((item) => {
+      console.log("from text", item.text);
+      if (item.text) {
+        return item;
+      }
+    });
     state = {
       word: data[0].word,
       url: newurl[0].audio,
+      text: text[0].text,
     };
-    console.log(newurl[0].audio);
+    console.log(text[0].text);
   }
 
   const audio = new Audio(state.url);
@@ -33,8 +40,8 @@ function Sound() {
   return (
     <div className="w-full my-6 flex flex-row justify-between">
       <div>
-        <h2 className="text-2xl font-bold">{state.word}</h2>
-        <p className="text-xl">Pronounce</p>
+        <h2 className="text-6xl font-bold lowercases my-2">{state.word}</h2>
+        <p className="text-xl">{state.text}</p>
       </div>
       <div>
         <audio className="w-full" ref={audioRef} muted>
@@ -45,7 +52,11 @@ function Sound() {
             audio.play();
           }}
         >
-          <img src="../../public/assets/icon-play.svg" alt="play" />
+          <img
+            src="../../public/assets/icon-play.svg"
+            alt="play"
+            className="my-2"
+          />
         </button>
       </div>
     </div>

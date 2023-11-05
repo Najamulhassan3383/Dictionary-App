@@ -10,18 +10,18 @@ function Input() {
   const inputRef = useRef(null);
 
   const dispatch = useDispatch();
-  const handleClick = (e) => {
+  const handleClick = () => {
     let value = inputRef.current.value.trim();
     // console.log(value);
     if (value) {
-        dispatch(fetchData(value));
-        inputRef.current.value = "";
+      dispatch(fetchData(value));
+      inputRef.current.value = "";
     }
     // console.log("clicked");
     // dispatch(fetchData());
   };
   return (
-    <div className="w-full h-16  rounded-xl flex flex-row hover:border-4 transition-all ">
+    <div className="w-full h-16  rounded-xl flex flex-row focus-within:border-4 transition-all ">
       <input
         ref={inputRef}
         type="text"
