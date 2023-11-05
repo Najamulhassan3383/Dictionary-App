@@ -5,7 +5,7 @@ import Hero from "./Hero";
 
 function MainContainer() {
   return (
-    <div className="max-w-3xl m-auto my-12">
+    <div className="max-w-3xl mx-12 my-12 md:mx-auto">
       <Header />
       <Input />
       <Hero />
