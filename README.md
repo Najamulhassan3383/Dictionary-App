@@ -1,10 +1,10 @@
 # Dictionary Web App - Frontend Mentor Challenge
 
-[![Deploy Site to GitHub Pages](https://github.com/jefcooper/fem-dictionary-web-app/actions/workflows/static.yml/badge.svg)](https://github.com/jefcooper/fem-dictionary-web-app/actions/workflows/static.yml)
-![Vercel](https://vercelbadge.vercel.app/api/jefcooper/fem-dictionary-web-app)
 
-- Live on Github Pages: https://jefcooper.github.io/fem-dictionary-web-app
-- Live on Vercel: https://fem-dictionary-web-app.vercel.app/#keyboard
+![Vercel](https://dictionary-app012345.netlify.app/)
+
+
+- Live on Vercel: https://dictionary-app012345.netlify.app/
 
 This is a solution to the [Dictionary Web App](https://www.frontendmentor.io/challenges/dictionary-web-app-h5wwnyuKFL). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
