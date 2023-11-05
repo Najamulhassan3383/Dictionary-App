@@ -23,8 +23,7 @@ function Sound() {
 
   const [playing, setPlaying] = React.useState(false);
   const audioRef = React.useRef(null);
-  const toggle = () => setPlaying(!playing);
-  // console.log(state.url);
+
   React.useEffect(() => {
     // console.log(audioRef.current);
     playing ? audioRef.current.play() : audioRef.current.pause();
@@ -44,11 +43,7 @@ function Sound() {
             audio.play();
           }}
         >
-          <img
-            src="/assets/icon-play.svg"
-            alt="play"
-            className="my-2"
-          />
+          <img src="/assets/icon-play.svg" alt="play" className="my-2" />
         </button>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React from "react";
+
 import Sound from "./Sound";
 import { useSelector } from "react-redux";
 import MeaningWrapper from "./MeaningWrapper";

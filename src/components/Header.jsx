@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useEffect } from "react";
 import ThemeSelector from "./ThemeSelector";
 import { useDispatch, useSelector } from "react-redux";
 import { changeTheme } from "./Store/ThemeSlice";
